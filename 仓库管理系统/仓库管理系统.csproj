@@ -88,6 +88,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\Login.css" />
     <Content Include="Global.asax" />
     <Content Include="img\fz.png" />
     <Content Include="layui\css\admin.css" />

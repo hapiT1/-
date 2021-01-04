@@ -1,0 +1,81 @@
+﻿body {
+    margin:0;
+    padding:0;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    height: 35px;
+    font-size: 30px;
+    margin-top: 30px;
+    color: #2A8FCD;
+    font-weight: bold;
+}
+
+.background {
+    background: #f2f2f2;
+    margin: 20px 0 0 0;
+    padding:20px 0 40px 0;
+}
+
+.item {
+    margin-top: 10px;
+    text-align:center;
+}
+
+textarea, input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color], .uneditable-input {
+    border: 0 none;
+    border: 2px solid #ccc;
+    background: #fff;
+    -webkit-appearance: none;
+}
+
+input[type=search], input[type=text], input[type=password], input[type=email], input[type=range], input[type=url] {
+    width: 210px;
+}
+
+textarea, input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color], .uneditable-input {
+    display: inline-block;
+    padding: 6px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #555;
+    vertical-align: middle;
+}
+
+input, button, select, textarea {
+    font-family: "Microsoft Yahei","微软雅黑",Tahoma,Helvetica,Arial,sans-serif;
+}
+
+}
+
+.btn-primary {
+    color: #fff;
+    background: #1f90c8;
+    border-bottom-color: #1c82b4;
+}
+
+.item .btn-primary {
+    width: 228px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 7px 16px;
+    margin: 0 3px 0 0;
+    font-family: "Microsoft Yahei","微软雅黑",Tahoma,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: #1F90C8;
+    color: #fff;
+    border: 0 none;
+    border-bottom: 2px solid #1F90C8;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
