@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.cd
+namespace DAL.wwx
 {
     class Class1
     {
-      //ss
+        sbyte
     }
 }
