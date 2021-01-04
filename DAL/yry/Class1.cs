@@ -8,6 +8,6 @@ namespace DAL.yry
 {
     class Class1
     {
-
+        //
     }
 }
