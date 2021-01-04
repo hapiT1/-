@@ -13,5 +13,10 @@ namespace 仓库管理系统.Controllers
         {
             return View();
         }
+
+        public ActionResult Login()
+        {
+            return View();
+        }
     }
 }
