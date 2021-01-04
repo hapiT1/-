@@ -50,6 +50,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="fzy\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="zwj\Class1.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Models\Models.csproj">
@@ -58,11 +59,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="cd\" />
-    <Folder Include="fzy\" />
     <Folder Include="wwx\" />
     <Folder Include="yry\" />
-    <Folder Include="zwj\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
