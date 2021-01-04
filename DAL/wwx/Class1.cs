@@ -8,6 +8,5 @@ namespace DAL.wwx
 {
     class Class1
     {
-        sbyte
     }
 }
