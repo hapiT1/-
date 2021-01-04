@@ -8,6 +8,6 @@ namespace DAL.fzy
 {
     class Class1
     {
-        
+        ss
     }
 }
