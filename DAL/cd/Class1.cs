@@ -8,6 +8,6 @@ namespace DAL.cd
 {
     class Class1
     {
-        asas
+       abc
     }
 }
