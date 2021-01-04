@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="img\fz.png" />
     <Content Include="layui\css\admin.css" />
     <Content Include="layui\css\amazeui.min.css" />
     <Content Include="layui\css\bootstrap.min.css" />
@@ -175,6 +176,7 @@
     <None Include="packages.config" />
     <Content Include="Views\JooWMS\Index.cshtml" />
     <Content Include="Views\cd\a.cshtml" />
+    <Content Include="Views\cd\Rkgl.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -9,7 +9,7 @@ namespace 仓库管理系统.Controllers
     public class cdController : Controller
     {
         // GET: cd
-        public ActionResult Index()
+        public ActionResult Rkgl()
         {
             return View();
         }
