@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="afb928d7a70f4245930a8af8604729d6" Name="Diagram1">
+        <EntityTypeShape EntityType="JoolbwModel.Admin" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.BadReport" Width="1.5" PointX="0.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.BadReportDetail" Width="1.5" PointX="3" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.CheckData" Width="1.5" PointX="5.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.CheckStock" Width="1.5" PointX="5.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.CheckStockInfo" Width="1.5" PointX="7.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.CloneHistory" Width="1.5" PointX="7.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.CloneTemp" Width="1.5" PointX="9.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.CusAddress" Width="1.5" PointX="9.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.Customer" Width="1.5" PointX="7.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.Equipment" Width="1.5" PointX="9.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.InStorage" Width="1.5" PointX="6" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.InStorDetail" Width="1.5" PointX="3" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.InventoryBook" Width="1.5" PointX="3" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.LocalProduct" Width="1.5" PointX="11.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.Location" Width="1.5" PointX="3.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.Measure" Width="1.5" PointX="11.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.MeasureRel" Width="1.5" PointX="11.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.MoveOrder" Width="1.5" PointX="9" PointY="28.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.MoveOrderDetail" Width="1.5" PointX="11.25" PointY="30.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.OutStoDetail" Width="1.5" PointX="9" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.OutStorage" Width="1.5" PointX="9" PointY="35.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.Product" Width="1.5" PointX="6" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.ProductCategory" Width="1.5" PointX="3.75" PointY="40" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.ReportParams" Width="1.5" PointX="11.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.Reports" Width="1.5" PointX="0.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.ReturnDetail" Width="1.5" PointX="11.25" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.ReturnOrder" Width="1.5" PointX="14.25" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.Sequence" Width="1.5" PointX="13.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.Storage" Width="1.5" PointX="0.75" PointY="28.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.Supplier" Width="1.5" PointX="3.75" PointY="43.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.SysDepart" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.sysdiagrams" Width="1.5" PointX="13.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.SysRelation" Width="1.5" PointX="3" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.SysResource" Width="1.5" PointX="3" PointY="48" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.SysRole" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JoolbwModel.TNum" Width="1.5" PointX="13.75" PointY="10.875" IsExpanded="true" />
+        <AssociationConnector Association="JoolbwModel.FK_Admin_SysDepart" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_Admin_SysRole" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_BadReportDetail_BadReport" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_BadReportDetail_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_BadReportDetail_Location1" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_BadReportDetail_Storage" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_InStorage_ProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_InStorage_Storage" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_InStorage_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_InStorDetail_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_InStorDetail_Storage" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_InventoryBook_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_InventoryBook_Location1" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_InventoryBook_Storage" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_MoveOrderDetail_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_MoveOrderDetail_Location1" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_OutStoDetail_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_Product_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_ReturnDetail_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_MoveOrder_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_MoveOrder_Storage" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_MoveOrderDetail_MoveOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_MoveOrderDetail_Storage" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_OutStoDetail_OutStorage" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_OutStoDetail_Storage" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_OutStorage_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_OutStorage_Storage" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_Product_Storage" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_ReturnDetail_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_ReturnOrder_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_ReturnDetail_Storage" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_ReturnOrder_Storage" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_SysResource_SysDepart" ManuallyRouted="false" />
+        <AssociationConnector Association="JoolbwModel.FK_SysRelation_SysRole" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
