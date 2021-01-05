@@ -9,20 +9,114 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Rkgl</title>
+    <link rel="stylesheet" href="~/layui/css/layui.css" media="all">
     <style>
         body {
-            margin:0px;
-            padding:0px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0px;
+            padding: 0px;
+            margin-top: 5px;
+        }
+
+        .breadcrumb {
+            margin-left: 20px;
+        }
+
+        .breadcrumb li {
+            display: inline-block;
+            margin-top:5px;
+        }
+
+        .breadcrumb li a {
+            text-decoration: none;
+            font-size: 13px;
+            color: #ff4897;
+        }
+
+        .breadcrumb li a:hover {
+            text-decoration: underline;
+        }
+
+        .icon-home {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            margin-right: 2px;
+            *margin-right: .3em;
+            line-height: 14px;
+            vertical-align: text-top;
+            background-image: url(../../img/fz1.png);
+            background-position: 14px 14px;
+            background-repeat: repeat;
+        }
+
+        .icon-angle-right {
+            display: inline-block;
+            width: 11px;
+            height: 13px;
+            margin-left: 5px;
+            line-height: 14px;
+            vertical-align: text-top;
+            background-image: url(../../img/jt.png);
+            background-repeat: repeat;
+        }
+
+        .dqy {
+            display: inline-block;
+            width: 12px;
+            height: 13px;
+            margin-top: 2px;
+            margin-left: 5px;
+            line-height: 14px;
+            vertical-align: text-top;
+            background-image: url(../../img/dqy.png);
+            background-repeat: repeat;
+        }
+
+        .widget-title {
+            font-size: 13px;
+            font-weight: bold;
+            height: 30px;
+            padding: 10px 0px 0px 10px;
+            background-color: #EFEFEF;
+            background-image: -webkit-linear-gradient(top, #FDFDFD 5%, #f1f0f0 100%);
         }
     </style>
 </head>
 <body >
-    <div style="border:1px solid red;">
+    <div style="height:35px;">
         <ul class="breadcrumb">
             <li><i class="icon-home"></i><a href="/Home/Welcome">首页</a><i class="icon-angle-right"></i></li>
             <li><a href="javascript:void(0)">仓库作业</a><i class="icon-angle-right"></i></li>
             <li><a href="javascript:void(0)">入库管理</a></li>
         </ul>
+    </div>
+    <div style="height:500px; background-color:#F7F7F6;padding:25px 20px 0px 20px;">
+        <div style="border:1px solid #e0dede; border-radius:3px; background-color:#ffffff;">
+            <div class="widget-title" style="">
+                <i class="dqy"></i>
+                入库单管理
+            </div>
+            <div style="height:300px;">
+                <div style="margin-left:20px;margin-top:15px;">
+                    <input id="Button1" type="button" value="所有" class="layui-btn layui-btn-sm layui-btn-primary" style="margin-left: -6px; border-radius:3px;" />
+                    <input id="Button1" type="button" value="待审核" class="layui-btn layui-btn-sm layui-btn-primary" style="margin-left: -6px; border-radius:3px;" />
+                    <input id="Button1" type="button" value="审核通过" class="layui-btn layui-btn-sm layui-btn-primary" style="margin-left: -6px; border-radius:3px;" />
+                    <input id="Button1" type="button" value="审核失败" class="layui-btn layui-btn-sm layui-btn-primary" style="margin-left:-6px; border-radius:3px;" />
+                    <span style=" float: right;">
+                        <button type="button" class="layui-btn layui-btn-sm" style="border-radius:3px;"><i class="layui-icon">&#xe654;</i>新增</button>
+                        <button type="button" class="layui-btn layui-btn-sm layui-btn-danger" style="border-radius:3px;"><i class="layui-icon">&#xe640;</i>删除</button>
+                        <button type="button" class="layui-btn layui-btn-sm layui-btn-normal" style="border-radius:3px;"><i class="layui-icon">&#xe68f;</i>导出</button>
+                    </span>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
