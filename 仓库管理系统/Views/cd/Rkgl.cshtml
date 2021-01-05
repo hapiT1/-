@@ -9,7 +9,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Rkgl</title>
-    <link rel="stylesheet" href="~/layui/css/layui.css" media="all">
+    <link href="~/layui-master/src/css/layui.css" rel="stylesheet" />
     <style>
         body {
             margin: 0px;
@@ -30,7 +30,7 @@
 
         .breadcrumb li {
             display: inline-block;
-            margin-top:5px;
+            margin-top: 5px;
         }
 
         .breadcrumb li a {
@@ -89,7 +89,7 @@
         }
     </style>
 </head>
-<body >
+<body>
     <div style="height:35px;">
         <ul class="breadcrumb">
             <li><i class="icon-home"></i><a href="/Home/Welcome">首页</a><i class="icon-angle-right"></i></li>
@@ -109,10 +109,10 @@
                     <input id="Button1" type="button" value="待审核" class="layui-btn layui-btn-sm layui-btn-primary" style="margin-left: -6px; border-radius:3px;" />
                     <input id="Button1" type="button" value="审核通过" class="layui-btn layui-btn-sm layui-btn-primary" style="margin-left: -6px; border-radius:3px;" />
                     <input id="Button1" type="button" value="审核失败" class="layui-btn layui-btn-sm layui-btn-primary" style="margin-left:-6px; border-radius:3px;" />
-                    <span style=" float: right;">
+                    <span style="float: right;">
                         <button type="button" class="layui-btn layui-btn-sm" style="border-radius:3px;"><i class="layui-icon">&#xe654;</i>新增</button>
                         <button type="button" class="layui-btn layui-btn-sm layui-btn-danger" style="border-radius:3px;"><i class="layui-icon">&#xe640;</i>删除</button>
-                        <button type="button" class="layui-btn layui-btn-sm layui-btn-normal" style="border-radius:3px;"><i class="layui-icon">&#xe68f;</i>导出</button>
+                        <button type="button" class="layui-btn layui-btn-sm" style="border-radius:3px;"><i class="layui-icon layui-icon-export"></i>导出</button>
                     </span>
                 </div>
             </div>
