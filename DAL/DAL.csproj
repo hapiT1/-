@@ -49,7 +49,7 @@
     <Compile Include="cd\Class1.cs" />
     <Compile Include="fzy\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="yry\Class2.cs" />
+    <Compile Include="yry\CustomerDal.cs" />
     <Compile Include="zwj\LoginDAL.cs" />
   </ItemGroup>
   <ItemGroup>

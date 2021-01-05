@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="yry\CustomerBll.cs" />
     <Compile Include="zwj\LoginBLL.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -59,7 +60,6 @@
     <Folder Include="cd\" />
     <Folder Include="fzy\" />
     <Folder Include="wwx\" />
-    <Folder Include="yry\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
