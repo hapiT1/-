@@ -14,8 +14,8 @@ namespace DAL.zwj
         public int LoginYesOrNo(string username,string password)
         {
             var list = context.Admin.ToList();
-            int i = list.Where(p => p.UserName.Contains(username)).Count();
-            int j = list.Where(p => p.PassWord.Contains(password)).Count();
+            int i = list.Where(p => p.UserName == username).Count();
+            int j = list.Where(p => p.PassWord == password).Count();
             if (i == 0 && j == 1)
             {
                 return 1;
@@ -23,6 +23,10 @@ namespace DAL.zwj
             else if (i == 1 && j == 0)
             {
                 return 2;
+            }
+            else if (i == 0 && j == 0)
+            {
+                return 3;
             }
             else
             {

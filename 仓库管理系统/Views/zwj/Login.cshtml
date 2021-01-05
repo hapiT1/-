@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>条码仓库管理系统</title>
     <link href="~/css/Login.css" rel="stylesheet" />
-    <link href="~/layui/css/layui.css" rel="stylesheet" media="all"/>
+    <link href="~/layui-master/src/css/layui.css" rel="stylesheet" />
 </head>
 <body>
     <div class="logo">仓储系统</div>
@@ -29,20 +29,30 @@
     </div>
 </body>
 </html>
-<script type="text/javascript" src="~/layui/js/jquery-1.11.3.min.js"></script>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/layui-master/src/layui.js"></script>
+<script src="~/layui-master/src/lay/all.js"></script>
+<script src="~/layui-master/dist/lay/modules/layer.js"></script>
 <script>
     $(function () {
-        var username = $("[name=input-username]").val();
-        var password = $("[name=input-password]").val();
-
         $("#login-btn").click(function () {
+            var username = $("[name=input-username]").val();
+            var password = $("[name=input-password]").val();
             $.ajax({
                 url: "/zwj/LoginYesOrNo",
                 type: "post",
                 data: { "username": username, "password": password },
                 dataType: "json",
                 success: function (res) {
-                    layer.msg('的确很重要', { icon: 1 });
+                    if (res == 1) {
+                        layer.msg('用户账号错误,请重新输入！', { icon: 2 });
+                    } else if (res == 2) {
+                        layer.msg('用户密码错误,请重新输入！', { icon: 2 });
+                    } else if (res == 3) {
+                        layer.msg('用户账号密码错误,请重新输入', { icon: 2 });
+                    } else {
+                        location.href = "/jooWMS/index";
+                    }
                 },
                 error: function (xhr) {
                     alert(xhr.responseText);
