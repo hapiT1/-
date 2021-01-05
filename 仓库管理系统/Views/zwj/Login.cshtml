@@ -31,6 +31,23 @@
 <script type="text/javascript" src="~/layui/js/jquery-1.11.3.min.js"></script>
 <script>
     $(function () {
-        
+        var username = $("[name=input-username]").val();
+        var password = $("[name=input-password]").val();
+
+        $("#login-btn").click(function () {
+            alert(username);
+            $.ajax({
+                url: "/zwj/LoginYesOrNo",
+                type: "post",
+                data: { "username": username, "password": password },
+                dataType: "json",
+                success: function (res) {
+                    alert(res);
+                },
+                error: function (xhr) {
+                    alert(xhr.responseText);
+                }
+            });
+        });
     });
 </script>
