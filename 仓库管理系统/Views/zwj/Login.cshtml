@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>条码仓库管理系统</title>
     <link href="~/css/Login.css" rel="stylesheet" />
+    <link href="~/layui/css/layui.css" rel="stylesheet" media="all"/>
 </head>
 <body>
     <div class="logo">仓储系统</div>
@@ -22,7 +23,7 @@
                 <input type="password" id="input-password" name="input-password" value="administrator" placeholder="密码" />
             </div>
             <div class="item">
-                <input id="login-btn" class="btn btn-primary" type="button" value="登录" onclick="User.Login()" />
+                <input id="login-btn" class="btn btn-primary" type="button" value="登录" />
             </div>
         </form>
     </div>
@@ -35,14 +36,13 @@
         var password = $("[name=input-password]").val();
 
         $("#login-btn").click(function () {
-            alert(username);
             $.ajax({
                 url: "/zwj/LoginYesOrNo",
                 type: "post",
                 data: { "username": username, "password": password },
                 dataType: "json",
                 success: function (res) {
-                    alert(res);
+                    layer.msg('的确很重要', { icon: 1 });
                 },
                 error: function (xhr) {
                     alert(xhr.responseText);
