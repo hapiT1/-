@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL
+namespace DAL.yry
 {
-    public class Class1
+    class Class1
     {
-        
+        //
     }
 }

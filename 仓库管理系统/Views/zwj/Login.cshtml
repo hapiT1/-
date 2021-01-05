@@ -1,0 +1,53 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>条码仓库管理系统</title>
+    <link href="~/css/Login.css" rel="stylesheet" />
+    <link href="~/layui/css/layui.css" rel="stylesheet" media="all"/>
+</head>
+<body>
+    <div class="logo">仓储系统</div>
+    <div class="background">
+        <form action="">
+            <div class="item user">
+                <input type="text" id="input-username" name="input-username" value="administrator" placeholder="用户名" />
+            </div>
+            <div class="item password">
+                <input type="password" id="input-password" name="input-password" value="administrator" placeholder="密码" />
+            </div>
+            <div class="item">
+                <input id="login-btn" class="btn btn-primary" type="button" value="登录" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="~/layui/js/jquery-1.11.3.min.js"></script>
+<script>
+    $(function () {
+        var username = $("[name=input-username]").val();
+        var password = $("[name=input-password]").val();
+
+        $("#login-btn").click(function () {
+            $.ajax({
+                url: "/zwj/LoginYesOrNo",
+                type: "post",
+                data: { "username": username, "password": password },
+                dataType: "json",
+                success: function (res) {
+                    layer.msg('的确很重要', { icon: 1 });
+                },
+                error: function (xhr) {
+                    alert(xhr.responseText);
+                }
+            });
+        });
+    });
+</script>

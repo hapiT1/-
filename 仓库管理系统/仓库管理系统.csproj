@@ -88,6 +88,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\Login.css" />
     <Content Include="Global.asax" />
     <Content Include="img\dqy.png" />
     <Content Include="img\fz1.png" />
@@ -222,6 +223,7 @@
     <Content Include="Views\JooWMS\Index.cshtml" />
     <Content Include="Views\cd\a.cshtml" />
     <Content Include="Views\cd\Rkgl.cshtml" />
+    <Content Include="Views\zwj\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -235,7 +237,6 @@
     <Folder Include="Views\fzy\" />
     <Folder Include="Views\wwx\" />
     <Folder Include="Views\yry\" />
-    <Folder Include="Views\zwj\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
