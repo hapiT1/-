@@ -18,5 +18,7 @@ namespace 仓库管理系统.Controllers
         {
             return View();
         }
+
+
     }
 }
