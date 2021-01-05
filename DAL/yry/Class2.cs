@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.wwx
+namespace DAL.yry
 {
-    class Class1
+    class Class2
     {
     }
 }
