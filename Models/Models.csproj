@@ -69,7 +69,6 @@
     <Compile Include="CheckStockInfo.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="CloneHistory.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
