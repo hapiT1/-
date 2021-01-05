@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Models;
 namespace DAL.yry
 {
-    class CustomerDal
+    public class CustomerDal
     {
          static JoolbwEntities entities = new JoolbwEntities();
         public static IQueryable selectCus(int pageIndex, int pageSize) 
@@ -26,7 +26,7 @@ namespace DAL.yry
                       };
             return obj.Skip((pageIndex - 1) * pageSize).Take(pageSize);
         }
-        public static PageList PageListStudent(int pageIndex, int pageSize)
+        public static PageList PageListCus(int pageIndex, int pageSize)
         {
             PageList list = new PageList();
             var obj = from p in entities.Customer
