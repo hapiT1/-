@@ -33,5 +33,12 @@ namespace DAL.zwj
                 return 0;
             }
         }
+
+        //登录查询账号角色 用来判断权限
+        public List<Admin> RoleNum(string username, string password)
+        {
+            var list = context.Admin.ToList();
+            return list;
+        }
     }
 }

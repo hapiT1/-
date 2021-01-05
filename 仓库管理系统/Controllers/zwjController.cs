@@ -15,8 +15,13 @@ namespace 仓库管理系统.Controllers
         {
             return View();
         }
-
+        //登录
         public ActionResult Login()
+        {
+            return View();
+        }
+        //员工管理
+        public ActionResult SysRole()
         {
             return View();
         }
@@ -26,6 +31,15 @@ namespace 仓库管理系统.Controllers
             string username = Request.Params["username"];
             string password = Request.Params["password"];
             int i = new LoginBLL().LoginYesOrNo(username, password);
+            return Json(i, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult AddSession()
+        {
+            string username = Request.Params["username"];
+            string password = Request.Params["password"];
+            List<Admin> list = new LoginBLL().RoleNum(username, password);
+            var i = list.Select(p => new { RoleNum = p.RoleNum, p.UserName, p.PassWord }).Where(p => p.UserName == username && p.PassWord == password);
             return Json(i, JsonRequestBehavior.AllowGet);
         }
     }

@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SysRole</title>
+    <link href="~/layui-master/src/css/layui.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+    </div>
+</body>
+</html>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/layui-master/src/layui.js"></script>
+<script src="~/layui-master/src/lay/all.js"></script>
+<script src="~/layui-master/dist/lay/modules/layer.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var lastname = sessionStorage.getItem("key");
+        $(div).html(lastname);
+    });
+</script>
