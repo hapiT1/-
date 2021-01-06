@@ -1,0 +1,141 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5px;
+}
+
+.breadcrumb {
+    margin-left: 20px;
+}
+
+.breadcrumb li {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #016FA7;
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+.icon-home {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+    *margin-right: .3em;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url(../../img/fz1.png);
+    background-position: 14px 14px;
+    background-repeat: repeat;
+}
+
+.breadcrumb > li + li:before {
+    color: #016FA7;
+    content: "> ";
+    padding: 0 5px;
+}
+/* 头部通用 */
+
+.widget-title {
+    background-color: #EFEFEF;
+    background-image: -webkit-gradient(linear, 0 0%, 0 100%, from(#FDFDFD), to(#EAEAEA));
+    background-image: -webkit-linear-gradient(top, #FDFDFD 0%, #EAEAEA 100%);
+    background-image: -moz-linear-gradient(top, #FDFDFD 0%, #EAEAEA 100%);
+    background-image: -ms-linear-gradient(top, #FDFDFD 0%, #EAEAEA 100%);
+    background-image: -o-linear-gradient(top, #FDFDFD 0%, #EAEAEA 100%);
+    background-image: -linear-gradient(top, #FDFDFD 0%, #EAEAEA 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#eaeaea',GradientType=0 );
+    border-bottom: 1px solid #e0dede;
+    height: 36px;
+    -webkit-border-radius: 3px 3px 0px 0px;
+    -moz-border-radius: 3px 3px 0px 0px;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.widget {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border-top: 1px solid #e0dede;
+    border-left: 1px solid #e0dede;
+    border-right: 1px solid #e0dede;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color:white;
+    min-height:300px;
+    margin:0 20px 0 20px;
+}
+
+.widget-title > h4 {
+    color: #444;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 12px 11px 10px 15px;
+    line-height: 12px;
+    margin: 0;
+}
+
+.icon-globe {
+    display: inline-block;
+    width: 12px;
+    height: 13px;
+    margin-top: 1px;
+    margin-left: 5px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url(../../img/dqy.png);
+    background-repeat: repeat;
+}
+
+.active {
+    display: inline-block;
+    height:36px;
+    margin:3px 20px 0 0;
+    float:right;
+}
+.widget-centen {
+    border: 1px solid black;
+    min-height:200px;
+}
+
+.Search-bar {
+    height:38px;
+    margin:10px 0 0 20px;
+}
+
+.Search-display{
+    border:1px solid black;
+    margin:10px 20px 0 20px;
+    min-height:200px;
+}
+
+.Search-bar input{
+    display:inline-block;
+    margin: 0 10px 0 0;
+}
+
+.Search-bar button{
+    display:inline-block;
+}
+

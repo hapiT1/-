@@ -94,6 +94,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="css\Login.css" />
+    <Content Include="css\Top.css" />
     <Content Include="Global.asax" />
     <Content Include="img\dqy.png" />
     <Content Include="img\fz1.png" />

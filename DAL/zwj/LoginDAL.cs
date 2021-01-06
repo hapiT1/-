@@ -40,5 +40,14 @@ namespace DAL.zwj
             var list = context.Admin.ToList();
             return list;
         }
+
+        #region 查询全部 分页
+        public List<Admin> queryAll(int pageSize, int pageNum)
+        {
+            List<Admin> list = context.Admin.ToList();
+            var alist = list.Skip(pageSize * (pageNum - 1)).Take(pageSize).ToList();
+            return alist;
+        }
+        #endregion
     }
 }

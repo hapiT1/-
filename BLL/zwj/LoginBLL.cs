@@ -22,5 +22,12 @@ namespace BLL.zwj
         {
             return new LoginDAL().RoleNum(username, password);
         }
+
+        #region 查询全部
+        public List<Admin> queryAll(int pageSize, int pageNum)
+        {
+            return new LoginDAL().queryAll(pageSize, pageNum);
+        }
+        #endregion
     }
 }

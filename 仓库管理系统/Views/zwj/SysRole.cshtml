@@ -10,10 +10,71 @@
     <meta name="viewport" content="width=device-width" />
     <title>SysRole</title>
     <link href="~/layui-master/src/css/layui.css" rel="stylesheet" />
+    <link href="~/css/Top.css" rel="stylesheet" />
 </head>
 <body>
-    <div></div>
+    <div id="top" style="height:35px;">
+        <ul class="breadcrumb">
+            <li><i class="icon-home"></i><a href="/cd/a">首页</a></li>
+            <li><a href="javascript:void(0)">仓库作业</a></li>
+            <li><a href="javascript:void(0)">入库管理</a></li>
+        </ul>
+    </div>
+    <div id="center" style="background-color: #eee; height: 721px;padding:20px 0 0;">
+        <div class="widget">
+            <div class="widget-title">
+                <h4>
+                    <i class="icon-globe">
 
+                    </i>
+                    用户管理
+                </h4>
+                <div class="active">
+                    <button type="button" class="layui-btn layui-btn-sm layui-btn-normal"><i class="layui-icon">&#xe654;</i>新增</button>
+                    <button type="button" class="layui-btn layui-btn-sm layui-btn-danger"><i class="layui-icon">&#xe640;</i>删除</button>
+                    <button type="button" class="layui-btn layui-btn-sm"><i class="layui-icon layui-icon-export"></i>导出</button>
+                </div>
+            </div>
+            <div class="widget-centen">
+                <div class="Search-bar">
+                    <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入用户名或者工号" class="layui-input" style="width:300px;">
+                    <button type="button" class="layui-btn layui-btn-normal"><i class="layui-icon">&#xe615;</i>搜索</button>
+                    <button type="button" class="layui-btn" style="background-color:#01AAED">高级搜索<i class="layui-icon">&#xe625;</i></button>
+                </div>
+                <div class="Search-display">
+                    <table class="layui-table">
+                        <colgroup>
+                            <col width="150">
+                            <col width="200">
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>昵称</th>
+                                <th>加入时间</th>
+                                <th>签名</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>贤心</td>
+                                <td>2016-11-29</td>
+                                <td>人生就像是一场修行</td>
+                            </tr>
+                            <tr>
+                                <td>许闲心</td>
+                                <td>2016-11-28</td>
+                                <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="foot">
+
+    </div>
 </body>
 </html>
 <script src="~/Scripts/jquery-3.4.1.min.js"></script>
@@ -23,5 +84,21 @@
 <script type="text/javascript">
     $(function(){
         var lastname = sessionStorage.getItem("RoleNum");
+        queryAll(10, 1);
     });
+
+    function queryAll(pageSize,pageNum) {
+        $.ajax({
+            url: "/zwj/queryAll",
+            type: "post",
+            data: { "pageSize": pageSize, "pageNum": pageNum },
+            dataType: "json",
+            success: function (res) {
+                alert(JSON.stringify(res));
+            },
+            error: function (xhr) {
+                alert(xhr.responseText);
+            }
+        });
+    }
 </script>
